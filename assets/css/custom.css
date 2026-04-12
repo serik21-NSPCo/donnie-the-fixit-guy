@@ -544,3 +544,175 @@ button,
   border-left: 5px solid #163847;
 }
 
+/* About page warmth */
+body.no-sidebar #main .box {
+  position: relative;
+}
+
+body.no-sidebar #main .box:before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 100%;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.0), rgba(31, 93, 77, 0.015));
+  border-radius: 0.45rem;
+}
+
+body.no-sidebar #main .box header h2,
+body.no-sidebar #main .box header h3 {
+  color: #173847;
+}
+
+body.no-sidebar #main .box p strong,
+body.no-sidebar #main .box li strong {
+  color: #1f5d4d;
+}
+
+/* Photo framing for Donnie portraits */
+#main .image.fit img[src*="donnie-"] {
+  border-radius: 0.65rem;
+  border: 1px solid rgba(18, 46, 59, 0.10);
+  box-shadow:
+    0 0.7rem 1.4rem rgba(17, 34, 45, 0.10),
+    0 0 0 6px rgba(255,255,255,0.85);
+  background: #fff;
+}
+
+#main .image.fit img[src*="donnie-"]:hover {
+  box-shadow:
+    0 0.95rem 1.8rem rgba(17, 34, 45, 0.14),
+    0 0 0 6px rgba(255,255,255,0.92);
+}
+
+/* Give About page image rows a bit more breathing room */
+body.no-sidebar #main .row + .row {
+  margin-top: 0.5rem;
+}
+
+/* Slightly softer About page boxes */
+body.no-sidebar #main .box {
+  background: linear-gradient(180deg, #ffffff 0%, #fcfdfd 100%);
+}
+
+/* Stronger before/after visual treatment on Tech page */
+.wiring-collage,
+#main .box .row {
+  position: relative;
+}
+
+/* Before section label effect */
+.wiring-collage .wiring-main {
+  position: relative;
+}
+
+.wiring-collage .wiring-main:after {
+  content: "BEFORE";
+  position: absolute;
+  left: 0.9rem;
+  bottom: 0.9rem;
+  background: rgba(17, 34, 45, 0.86);
+  color: #fff4e7;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  padding: 0.38rem 0.65rem;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.35rem 0.8rem rgba(0,0,0,0.18);
+}
+
+/* After gallery feel */
+#main .box img[src*="wiring-after-"] {
+  border-radius: 0.55rem;
+  border: 1px solid rgba(31, 93, 77, 0.18);
+  box-shadow: 0 0.55rem 1rem rgba(21, 42, 56, 0.08);
+  background: #fff;
+}
+
+#main .box img[src*="wiring-after-"]:hover {
+  box-shadow: 0 0.8rem 1.4rem rgba(21, 42, 56, 0.12);
+}
+
+/* Add labels to after images */
+#main .box .col-4 .image.fit {
+  position: relative;
+}
+
+#main .box .col-4 .image.fit:has(img[src*="wiring-after-"]):after {
+  content: "AFTER";
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.8rem;
+  background: rgba(31, 93, 77, 0.9);
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  padding: 0.38rem 0.65rem;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.35rem 0.8rem rgba(0,0,0,0.16);
+}
+
+/* Browser fallback for :has unsupported environments:
+   add visible style to after section container too */
+#main .box img[src*="wiring-after-"] {
+  outline: 3px solid rgba(31, 93, 77, 0.08);
+  outline-offset: -3px;
+}
+
+/* Tech page “calm result” vibe */
+#main .box img[src*="wiring-after-"] {
+  background: linear-gradient(180deg, #ffffff 0%, #f4faf7 100%);
+}
+
+/* Slightly warmer CTA boxes */
+#main .box:last-of-type {
+  background: linear-gradient(180deg, #fffdf9 0%, #fff7ed 100%);
+}
+
+/* Improve readability of long text blocks */
+#main .box p,
+#main .box li {
+  line-height: 1.72;
+}
+
+/* Subtle divider accents */
+#main .box > header {
+  position: relative;
+}
+
+#main .box > header:after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3px;
+  margin-top: 0.75rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #d8892b 0%, #1f5d4d 100%);
+}
+
+/* About page callout friendliness */
+body.no-sidebar #main .box:nth-of-type(2n) {
+  border-left-color: #d8892b !important;
+}
+
+body.no-sidebar #main .box:nth-of-type(2n+1) {
+  border-left-color: #1f5d4d !important;
+}
+
+/* Mobile tweaks */
+@media screen and (max-width: 640px) {
+  .wiring-collage .wiring-main:after,
+  #main .box .col-4 .image.fit:has(img[src*="wiring-after-"]):after {
+    font-size: 0.72rem;
+    padding: 0.32rem 0.55rem;
+  }
+
+  #main .image.fit img[src*="donnie-"] {
+    box-shadow:
+      0 0.55rem 1rem rgba(17, 34, 45, 0.10),
+      0 0 0 4px rgba(255,255,255,0.88);
+  }
+}
+
+
