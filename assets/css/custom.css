@@ -723,7 +723,7 @@ body.no-sidebar #main .box:nth-of-type(2n+1) {
 	border: 1px solid rgba(224, 146, 43, 0.35);
 	border-radius: 999px;
 	color: #f4efe7;
-	font-size: 1rem;
+	font-size: clamp(1rem, 1.1vw, 1.15rem);
 	font-weight: 500;
 	line-height: 1.5;
 	text-align: center;
