@@ -2906,47 +2906,47 @@ input, select, textarea {
 			}
 
 	}
-
-.wiring-collage {
-  display: grid;
-  grid-template-columns: 2fr 1.25fr;
-  gap: 1rem;
-  align-items: stretch;
-}
-
-.wiring-main .image,
-.wiring-grid .image {
-  display: block;
-  margin: 0;
-  height: 100%;
-}
-
-.wiring-main img,
-.wiring-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.4rem;
-}
-
-.wiring-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-@media screen and (max-width: 980px) {
-  .wiring-collage {
-    grid-template-columns: 1fr;
-  }
-
-  .wiring-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .wiring-grid {
-    grid-template-columns: 1fr;
-  }
+			
+			.wiring-collage {
+			  display: grid;
+			  grid-template-columns: 2fr 1.25fr;
+			  gap: 1rem;
+			  align-items: stretch;
+			}
+			
+			.wiring-main .image,
+			.wiring-grid .image {
+			  display: block;
+			  margin: 0;
+			  height: 100%;
+			}
+			
+			.wiring-main img,
+			.wiring-grid img {
+			  width: 100%;
+			  height: 100%;
+			  object-fit: cover;
+			  border-radius: 0.4rem;
+			}
+			
+			.wiring-grid {
+			  display: grid;
+			  grid-template-columns: 1fr 1fr;
+			  gap: 1rem;
+			}
+			
+			@media screen and (max-width: 980px) {
+			  .wiring-collage {
+			    grid-template-columns: 1fr;
+			  }
+			
+			  .wiring-grid {
+			    grid-template-columns: 1fr 1fr;
+			  }
+			}
+			
+			@media screen and (max-width: 640px) {
+			  .wiring-grid {
+			    grid-template-columns: 1fr;
+			  }
 }
