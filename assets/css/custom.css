@@ -328,3 +328,219 @@ button.alt {
   .stat-strip, .wiring-grid { grid-template-columns: 1fr; }
 }
 
+
+/* ===== Donnie site color refresh ===== */
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(25, 77, 63, 0.08), transparent 28%),
+    linear-gradient(180deg, #eef2f3 0%, #e8ecef 100%);
+  color: #24333b;
+}
+
+#page-wrapper {
+  background: transparent;
+}
+
+/* Header */
+#header.site-header-slim {
+  background:
+    linear-gradient(180deg, rgba(14, 42, 56, 0.98) 0%, rgba(19, 56, 73, 0.96) 100%);
+  border-bottom: 4px solid #d8892b;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#header h1 a {
+  color: #f6f1e7 !important;
+}
+
+#nav > ul > li > a {
+  color: rgba(246, 241, 231, 0.78) !important;
+  font-weight: 700;
+}
+
+#nav > ul > li.current > a,
+#nav > ul > li:hover > a {
+  background: #1f5d4d !important;
+  color: #ffffff !important;
+  border-radius: 0.35rem;
+}
+
+/* Shared hero */
+.page-hero {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(246,249,250,0.98) 100%);
+  border: 1px solid rgba(31, 93, 77, 0.14);
+  border-top: 5px solid #d8892b;
+  box-shadow: 0 0.5rem 1.4rem rgba(15, 34, 45, 0.10);
+}
+
+.page-hero-copy .eyebrow {
+  color: #1f5d4d;
+}
+
+.page-hero-copy h2 {
+  color: #163847;
+}
+
+.page-hero-copy p {
+  color: #435861;
+}
+
+.hero-badge {
+  background: rgba(31, 93, 77, 0.08);
+  color: #1f5d4d;
+  border: 1px solid rgba(31, 93, 77, 0.14);
+}
+
+/* Boxes */
+.box {
+  background: #ffffff;
+  border: 1px solid rgba(16, 46, 61, 0.08);
+  box-shadow: 0 0.35rem 1rem rgba(21, 42, 56, 0.06);
+}
+
+.box > header {
+  border-bottom: 1px solid rgba(16, 46, 61, 0.08);
+  margin-bottom: 1.15rem;
+  padding-bottom: 0.85rem;
+}
+
+.box > header h2,
+.box > header h3,
+.box > header h4 {
+  color: #153847;
+}
+
+.box p,
+.box li {
+  color: #4a5c65;
+}
+
+/* Section headings */
+header.major h2 {
+  color: #153847;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.35rem;
+}
+
+header.major h2:after {
+  content: "";
+  display: block;
+  width: 3.75rem;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #d8892b 0%, #1f5d4d 100%);
+  margin: 0.65rem auto 0;
+}
+
+/* Service cards */
+.service-box {
+  border-top: 4px solid #1f5d4d;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.7rem 1.3rem rgba(21, 42, 56, 0.10);
+}
+
+.service-icon {
+  color: #d8892b;
+}
+
+.service-box h3 {
+  color: #163847;
+}
+
+/* Stat strip */
+.stat-item {
+  background: linear-gradient(180deg, #f7faf8 0%, #eef5f1 100%);
+  border: 1px solid rgba(31, 93, 77, 0.14);
+}
+
+.stat-item strong {
+  color: #1f5d4d;
+}
+
+/* Highlight box */
+.highlight-box {
+  background:
+    linear-gradient(180deg, rgba(23, 56, 71, 0.97) 0%, rgba(18, 46, 59, 0.97) 100%);
+  color: #eaf1f4;
+}
+
+.highlight-box h3,
+.highlight-box li,
+.highlight-box p {
+  color: #eaf1f4 !important;
+}
+
+/* Buttons */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+  background: #d8892b;
+  box-shadow: none;
+}
+
+.button:hover {
+  background: #bf7723;
+}
+
+.button.alt {
+  background: #1f5d4d !important;
+}
+
+.button.alt:hover {
+  background: #18493d !important;
+}
+
+.button.primary {
+  background: #d8892b !important;
+}
+
+/* Contact + footer */
+#footer {
+  background:
+    linear-gradient(180deg, rgba(17, 45, 58, 0.98) 0%, rgba(13, 34, 45, 1) 100%);
+  color: rgba(246, 241, 231, 0.84);
+}
+
+#footer h2,
+#footer strong,
+#footer a {
+  color: #f6f1e7 !important;
+}
+
+#footer .button {
+  background: #d8892b;
+}
+
+#copyright {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Tech page collage */
+.wiring-main img,
+.wiring-grid img {
+  border: 1px solid rgba(16, 46, 61, 0.08);
+  box-shadow: 0 0.35rem 1rem rgba(21, 42, 56, 0.06);
+}
+
+/* Subtle alternating color accents on stacked boxes */
+#main .box:nth-of-type(3n+1) {
+  border-left: 5px solid #1f5d4d;
+}
+
+#main .box:nth-of-type(3n+2) {
+  border-left: 5px solid #d8892b;
+}
+
+#main .box:nth-of-type(3n+3) {
+  border-left: 5px solid #163847;
+}
+
