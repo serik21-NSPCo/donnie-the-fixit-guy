@@ -351,6 +351,7 @@ body {
 }
 
 #header h1 a {
+	margin-bottom: 0.4em
   color: #f6f1e7 !important;
 }
 
