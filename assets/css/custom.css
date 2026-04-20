@@ -783,15 +783,23 @@ ul.contact li p {
   text-align: center;
 }
 
+
 .quote-form input[type="text"],
 .quote-form input[type="email"],
 .quote-form input[type="tel"],
 .quote-form select,
 .quote-form textarea {
-	background: #fff;
-	border: 1px solid rgba(16, 46, 61, 0.14);
-	color: #2f3d42;
-	box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding: 0.75em 1em;
+  font-size: 1em;
+  border-radius: 5px;
+  border: solid 1px #dddddd;
+  background: #fff;
+  box-sizing: border-box;
+}
 }
 
 .quote-form input:focus,
