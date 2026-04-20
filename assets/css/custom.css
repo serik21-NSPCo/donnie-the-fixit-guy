@@ -816,3 +816,20 @@ ul.contact li p {
   max-width: 700px;
   margin: 0 auto;
 }
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#quote-phone {
+  display: block;
+  width: 100%;
+}
+
+#get-a-quote header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
