@@ -993,3 +993,7 @@ ul.contact li p {
   box-shadow: 0 0.7rem 1.3rem rgba(21, 42, 56, 0.12);
   cursor: pointer;
 }
+
+.service-box {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
