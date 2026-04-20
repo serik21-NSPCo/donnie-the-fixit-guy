@@ -660,3 +660,12 @@ body.no-sidebar #main .row + .row {
 .service-overview-card footer {
 	margin-top: 1.25em;
 }
+
+#main .box h4 {
+	margin-bottom: 0.55em;
+	color: #1f5d4d;
+}
+
+#main .box .row > div section p:last-child {
+	margin-bottom: 0;
+}
