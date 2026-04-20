@@ -669,3 +669,116 @@ body.no-sidebar #main .row + .row {
 #main .box .row > div section p:last-child {
 	margin-bottom: 0;
 }
+
+/* =========================
+   Balanced Center Alignment
+   Centers headings/buttons
+   Keeps long lists readable
+========================= */
+
+/* Hero */
+.page-hero,
+.page-hero-copy,
+.page-hero-copy .eyebrow,
+.page-hero-copy h2,
+.page-hero-copy p {
+  text-align: center;
+}
+
+.page-hero-inner {
+  justify-content: center;
+}
+
+.hero-actions,
+.hero-badge-row {
+  justify-content: center;
+}
+
+/* Section headers */
+.box > header,
+.box > header h2,
+.box > header h3,
+.box > header h4,
+header.major,
+header.major h2,
+#main .box h2,
+#main .box h3,
+#main .box h4,
+#footer h2,
+#footer h3,
+#footer h4 {
+  text-align: center;
+}
+
+/* Center the accent line under box headers */
+.box > header::after {
+  margin: 0.75rem auto 0;
+}
+
+/* General paragraph text in cards/boxes */
+#main .box p,
+.service-box,
+.service-box h3,
+.service-box p,
+.service-overview-card,
+.service-overview-card h3,
+.service-overview-card h4,
+.service-overview-card p,
+.contact-quick,
+.contact-quick li,
+#footer,
+#footer p {
+  text-align: center;
+}
+
+/* Buttons */
+.hero-actions,
+.box footer,
+.box .actions,
+#footer .actions {
+  text-align: center;
+}
+
+.hero-actions .button,
+.box .button,
+.box footer .button,
+.box .actions .button,
+#footer .button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Keep lists readable instead of fully centered */
+#main .box ul,
+#main .box ol,
+.service-overview-card ul,
+.service-overview-card ol,
+.highlight-box ul,
+.highlight-box ol {
+  text-align: left;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25em;
+}
+
+/* Contact list from theme override */
+ul.contact {
+  padding-left: 0;
+  text-align: center;
+}
+
+ul.contact li {
+  padding: 1.1em 0;
+  text-align: center;
+}
+
+ul.contact li h3 {
+  position: static;
+  display: block;
+  margin-bottom: 0.35em;
+}
+
+ul.contact li p {
+  text-align: center;
+}
