@@ -833,3 +833,21 @@ ul.contact li p {
   text-align: center;
   margin-bottom: 1.5rem;
 }
+
+.quote-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  display: none;
+}
+
+.quote-popup-box {
+  background: #1f5d4d;
+  color: #fff;
+  padding: 0.75em 1em;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  font-size: 0.95em;
+}
