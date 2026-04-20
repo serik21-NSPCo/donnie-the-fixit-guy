@@ -884,3 +884,100 @@ ul.contact li p {
   text-align: center;
   margin-top: 1em;
 }
+
+.quote-form input[type="text"],
+.quote-form input[type="email"],
+.quote-form input[type="tel"],
+.quote-form select,
+.quote-form textarea,
+.quote-form input[type="file"] {
+  background: #fff;
+  border: 1px solid rgba(16, 46, 61, 0.14);
+  color: #2f3d42;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.quote-form input[type="text"]:focus,
+.quote-form input[type="email"]:focus,
+.quote-form input[type="tel"]:focus,
+.quote-form select:focus,
+.quote-form textarea:focus,
+.quote-form input[type="file"]:focus {
+  border-color: #1f5d4d;
+  box-shadow: 0 0 0 3px rgba(31, 93, 77, 0.10);
+  outline: none;
+}
+
+.quote-form input:-webkit-autofill,
+.quote-form input:-webkit-autofill:hover,
+.quote-form input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #2f3d42;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.quote-form label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+  color: #163847;
+}
+
+.form-note {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #5d6b70;
+}
+
+.quote-popup {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 24, 33, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  z-index: 9999;
+}
+
+.quote-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.quote-popup-box {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 2rem 2.25rem;
+  max-width: 440px;
+  width: calc(100% - 2rem);
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(16, 46, 61, 0.08);
+}
+
+.quote-popup-check {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem auto;
+  border-radius: 999px;
+  background: rgba(31, 93, 77, 0.12);
+  color: #1f5d4d;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.quote-popup-box h3 {
+  margin: 0 0 0.5rem 0;
+  color: #163847;
+}
+
+.quote-popup-box p {
+  margin: 0;
+  color: #4a5b60;
+}
