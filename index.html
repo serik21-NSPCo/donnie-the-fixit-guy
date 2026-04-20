@@ -18,13 +18,12 @@
 	<script>
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".quote-form");
-  const popup = document.getElementById("quote-popup");
+  const button = form.querySelector('button[type="submit"]');
 
-  if (form && popup) {
-    form.addEventListener("submit", function () {
-      popup.style.display = "block";
-    });
-  }
+  form.addEventListener("submit", function () {
+    button.textContent = "Sending...";
+    button.disabled = true;
+  });
 });
 </script>
 	
