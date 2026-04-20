@@ -810,3 +810,9 @@ ul.contact li p {
 	font-size: 0.95rem;
 	color: #5d6b70;
 }
+
+#get-a-quote header p {
+  text-align: center !important;
+  max-width: 700px;
+  margin: 0 auto;
+}
