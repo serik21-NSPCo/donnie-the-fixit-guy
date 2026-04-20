@@ -782,3 +782,31 @@ ul.contact li h3 {
 ul.contact li p {
   text-align: center;
 }
+
+.quote-form input[type="text"],
+.quote-form input[type="email"],
+.quote-form input[type="tel"],
+.quote-form select,
+.quote-form textarea {
+	background: #fff;
+	border: 1px solid rgba(16, 46, 61, 0.14);
+	color: #2f3d42;
+	box-shadow: none;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+	border-color: #1f5d4d;
+	box-shadow: 0 0 0 3px rgba(31, 93, 77, 0.10);
+}
+
+.quote-form .actions {
+	margin-top: 0.5rem;
+}
+
+.form-note {
+	margin-top: 0.75rem;
+	font-size: 0.95rem;
+	color: #5d6b70;
+}
