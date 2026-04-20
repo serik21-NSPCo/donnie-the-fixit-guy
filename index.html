@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
 								<p class="center">Tell me a little about your project and I’ll get back to you with a ballpark estimate or next steps.</p>
 							</header>
 						
-							<form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
+							<form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
 								<input type="hidden" name="access_key" value="7245f84b-de34-42da-89bc-67357e33e26c">
 								<input type="hidden" name="subject" value="New Quote Request - Donnie the Fix-It Guy">
 								<input type="hidden" name="from_name" value="DonnieTheFixItGuy.com">
@@ -149,6 +149,11 @@ document.addEventListener("DOMContentLoaded", function () {
 						
 									<div class="col-6 col-12-small">
 										<input type="text" name="budget_timing" id="quote-timing" placeholder="Timeline or urgency (optional)" />
+									</div>
+
+									<div class="col-12">
+										<label for="file">Upload photos (optional)</label>
+										<input type="file" name="attachment" id="file" accept="image/*,.pdf">
 									</div>
 						
 									<div class="col-12">
