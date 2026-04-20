@@ -981,3 +981,15 @@ ul.contact li p {
   margin: 0;
   color: #4a5b60;
 }
+
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.service-link:hover .service-box {
+  transform: translateY(-4px);
+  box-shadow: 0 0.7rem 1.3rem rgba(21, 42, 56, 0.12);
+  cursor: pointer;
+}
