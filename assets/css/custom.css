@@ -646,3 +646,17 @@ body.no-sidebar #main .row + .row {
       0 0 0 4px rgba(255, 255, 255, 0.88);
   }
 }
+
+.service-overview-card ul {
+	margin-bottom: 1.25em;
+}
+
+.service-overview-card .service-icon {
+	margin-right: 0.35em;
+	font-size: 0.95em;
+	vertical-align: 0.03em;
+}
+
+.service-overview-card footer {
+	margin-top: 1.25em;
+}
