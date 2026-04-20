@@ -851,3 +851,28 @@ ul.contact li p {
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
   font-size: 0.95em;
 }
+
+#get-a-quote .actions {
+  text-align: center;
+  padding-left: 0;
+  margin: 0 auto 1.5em auto;
+}
+
+#get-a-quote .actions li {
+  display: inline-block;
+  margin: 0;
+}
+
+#get-a-quote .actions .button,
+#get-a-quote .actions button {
+  margin: 0;
+}
+
+#get-a-quote .col-12:last-child {
+  text-align: center;
+}
+
+#get-a-quote .form-note {
+  text-align: center;
+  margin-top: 1em;
+}
