@@ -997,3 +997,29 @@ ul.contact li p {
 .service-box {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+/* Fix washed-out mobile nav text */
+#navPanel .link,
+#navPanel nav a {
+	color: #1f2f35 !important;   /* darker readable color */
+	font-style: normal !important; /* remove italic */
+	font-weight: 500; /* slightly stronger */
+	opacity: 1 !important;
+}
+
+#navPanel .link:hover,
+#navPanel nav a:active {
+	color: #1f5d4d !important;
+}
+
+#navPanel nav a {
+	font-size: 1.05rem;
+}
+
+#navPanel {
+	background: #163847;
+}
+
+#navPanel nav a {
+	color: #ffffff !important;
+}
